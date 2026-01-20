@@ -58,11 +58,14 @@ Take a CSV export from Archidekt and get back the preferred sorting order for bu
 ## Sorting Notes
 
 ### Multicolour Sorting
-1. Colours
-2. Number of Colours
+1. Number of Colours
+2. Colours
 
 e.g.
 - ⚪🔵, ⚪⚫, ...
+- 🔵⚫, 🔵🔴, ...
+- ...
 - ⚪🔵⚫, ⚪🔵🔴, ..., ⚪⚫🔴, ⚪⚫🟢, ⚪🔴🟢
-- ⚪🔵⚫🔴, ⚪🔵⚫🟢, ⚪🔵🔴🟢, ⚪⚫🔴🟢
 - 🔵⚫🔴, ...
+- ...
+- ⚪🔵⚫🔴, ⚪🔵⚫🟢, ⚪🔵🔴🟢, ⚪⚫🔴🟢
