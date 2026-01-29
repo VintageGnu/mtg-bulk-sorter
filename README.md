@@ -49,10 +49,10 @@ Take a CSV export from Archidekt and get back the preferred sorting order for bu
 ### Basic Lands
 1. Type (Plains, Island, Swamp, Mountain, Forest)
 2. Full Art, Regular Art
-3. Artist (Alphabetical as written)
-4. Art
-5. Collector Number
-6. Foil, Non-Foil
+3. Foil, Non-Foil
+4. Artist (Alphabetical as written)
+5. Art
+6. Collector Number
 7. Edition Code
 
 ## Sorting Notes
