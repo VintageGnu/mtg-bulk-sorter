@@ -85,3 +85,8 @@ e.g.
 - 🔵⚫🔴, ...
 - ...
 - ⚪🔵⚫🔴, ⚪🔵⚫🟢, ⚪🔵🔴🟢, ⚪⚫🔴🟢
+
+## Sleeves
+All cards are sleeved in penny sleeves, except:
+* Basic lands (unless foil or full art)
+* Tokens (unless foil)
