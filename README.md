@@ -24,7 +24,8 @@ Take a CSV export from Archidekt and get back the preferred sorting order for bu
     1. Rare/Mythic/Special
     2. Common/Uncommon
 4. Mana Value (Lowest First)
-    1. Number of pips (Phyrexian, Regular)
+    * The idea is to sort by ease of casting so Phyrexian < X < Colourless < Hybrid < Specific Colour
+        * Hybrid Phyrexian would be the easiest but hybrid was hard enough to handle so I'll cross that bridge when I need to 😭
 5. Card Name
 6. Collector Number
 7. Foil, Non-Foil
