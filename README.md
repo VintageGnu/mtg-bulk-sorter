@@ -56,6 +56,21 @@ Take a CSV export from Archidekt and get back the preferred sorting order for bu
 6. Collector Number
 7. Edition Code
 
+### Tokens
+I haven't actually loaded these into Archidekt, but the sorting is here for completeness.
+
+1. Sidedness
+    1. Single Sided
+    2. Double Sided
+        * Use the side with the name that is first alphabetically as the front.
+2. Type
+    1. Generic Creatures
+    2. Offspring
+    3. Artifacts
+    4. Emblems
+4. Name
+5. Art
+
 ## Sorting Notes
 
 ### Multicolour Sorting
