@@ -17,3 +17,9 @@ mtg-bulk-sorter = "mtg_bulk_sorter:main"
 [build-system]
 requires = ["uv_build>=0.9.30,<0.10.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "hypothesis>=6.152.5",
+    "pytest>=9.0.3",
+]

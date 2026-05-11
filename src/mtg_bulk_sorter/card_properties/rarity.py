@@ -23,3 +23,4 @@ class Rarity:
             return other.rarity in ["common"]
         if self.rarity == "common":
             return False
+        return False

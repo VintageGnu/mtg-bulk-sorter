@@ -5,11 +5,14 @@ Take a CSV export from Archidekt and get back the preferred sorting order for bu
 ## The Order
 
 ### Spells
-1. Colour (cost only, not identity)
+1. Rarity
+    1. Rare/Mythic/Special
+    2. Common/Uncommon
+2. Colour (cost only, not identity)
     1. Mono
     2. [Multi](#multicolour-sorting)
     3. Colourless
-2. Type
+3. Type
     1. Creatures
     2. Planeswalkers
     3. Instants
@@ -20,9 +23,6 @@ Take a CSV export from Archidekt and get back the preferred sorting order for bu
     6. Artifacts
         1. Subtypeless
         2. By Subtype
-3. Rarity
-    1. Rare/Mythic/Special
-    2. Common/Uncommon
 4. Mana Value (Lowest First)
     * The idea is to sort by ease of casting so Phyrexian < X < Colourless < Hybrid < Specific Colour
         * Hybrid Phyrexian would be the easiest but hybrid was hard enough to handle so I'll cross that bridge when I need to 😭
@@ -32,7 +32,8 @@ Take a CSV export from Archidekt and get back the preferred sorting order for bu
 8. Edition Code
 
 ### Non-Basic Lands
-1. Colour (by mana produced):
+1. Rarity: Rare/Mythic, Common/Uncommon
+2. Colour (by mana produced):
     1. Mono
     2. Colourless
     3. [Multi](#multicolour-sorting)
@@ -41,7 +42,6 @@ Take a CSV export from Archidekt and get back the preferred sorting order for bu
             - WUBRG of specific
         3. Specific colours
             - WUBRG of specific
-2. Rarity: Rare/Mythic, Common/Uncommon
 3. Card Name
 4. Collector Number
 5. Foil, Non-Foil
@@ -90,3 +90,12 @@ e.g.
 All cards are sleeved in penny sleeves, except:
 * Basic lands (unless foil or full art)
 * Tokens (unless foil)
+
+## Usage
+For now just run with uv directly:  
+`uv run mtg-bulk-sorter path/to/export.csv`
+
+TODO: Create TUI and/or self-contained executable.
+
+## Tests (WIP)
+`uv run pytest`
