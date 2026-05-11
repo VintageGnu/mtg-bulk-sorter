@@ -1,0 +1,19 @@
+[project]
+name = "mtg-bulk-sorter"
+version = "0.1.0"
+description = "Take a CSV export from Archidekt and get back the preferred sorting order for bulk storage."
+readme = "README.md"
+authors = [
+    { name = "VintageGnu" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "sortedcontainers>=2.4.0",
+]
+
+[project.scripts]
+mtg-bulk-sorter = "mtg_bulk_sorter:main"
+
+[build-system]
+requires = ["uv_build>=0.9.30,<0.10.0"]
+build-backend = "uv_build"
