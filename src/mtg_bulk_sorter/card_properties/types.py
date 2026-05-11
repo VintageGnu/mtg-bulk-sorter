@@ -5,22 +5,13 @@ from functools import total_ordering
 class Types(list):
 
     def __repr__(self):
-        return ', '.join(self.raw)
+        return ', '.join(self)
 
     def __eq__(self, other):
         return set(self) == set(other)
 
     def __gt__(self, other):
-        if "Artifact" in self and "Artifact" not in other:
-            return True
-        if "Enchantment" in self and "Enchantment" not in other:
-            return True
-        if "Sorcery" in self and "Sorcery" not in other:
-            return True
-        if "Instant" in self and "Instant" not in other:
-            return True
-        if "Planeswalker" in self and "Planeswalker" not in other:
-            return True
-        if "Creature" in self and "Creature" not in other:
+        if any(t in self and t not in other for t in
+        ["Artifact", "Enchantment", "Sorcery", "Instant", "Planeswalker", "Creature"]):
             return True
         return False

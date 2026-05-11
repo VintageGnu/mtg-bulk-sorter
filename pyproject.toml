@@ -21,5 +21,12 @@ build-backend = "uv_build"
 [dependency-groups]
 dev = [
     "hypothesis>=6.152.5",
+    "pylint>=4.0.5",
     "pytest>=9.0.3",
 ]
+
+[tool.pylint.format]
+max-line-length = 120
+
+[tool.pylint."messages control"]
+disable = ["missing-class-docstring", "missing-function-docstring", "missing-module-docstring"]

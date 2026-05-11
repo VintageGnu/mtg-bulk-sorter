@@ -77,8 +77,7 @@ class ManaCost:
                 s += "Hybrid: "
                 s += ", ".join([f"{colour}: {count}" for colour, count in hybrid_colours])
             return s
-        else:
-            return "None"
+        return "None"
 
     def __eq__(self, other):
         if self.mana_value != other.mana_value:

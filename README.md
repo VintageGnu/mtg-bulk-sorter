@@ -2,6 +2,8 @@
 
 Take a CSV export from Archidekt and get back the preferred sorting order for bulk storage.
 
+[![lint](https://github.com/VintageGnu/mtg-bulk-sorter/actions/workflows/lint.yml/badge.svg?event=push)](https://github.com/VintageGnu/mtg-bulk-sorter/actions/workflows/lint.yml) [![test](https://github.com/VintageGnu/mtg-bulk-sorter/actions/workflows/test.yml/badge.svg?event=push)](https://github.com/VintageGnu/mtg-bulk-sorter/actions/workflows/test.yml)
+
 ## The Order
 
 ### Spells

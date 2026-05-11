@@ -1,4 +1,4 @@
-name: run-tests
+name: lint
 
 on:
   push:
@@ -10,7 +10,7 @@ permissions:
   contents: read
 
 jobs:
-  build:
+  lint:
     runs-on: ubuntu-latest
 
     steps:
@@ -25,5 +25,5 @@ jobs:
     - name: Install the project
       run: uv sync --locked --all-extras --dev
 
-    - name: Run tests
-      run: uv run pytest
+    - name: Run Pylint
+      run: uv run pylint src/

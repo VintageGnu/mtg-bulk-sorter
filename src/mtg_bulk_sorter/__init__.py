@@ -19,7 +19,7 @@ def main() -> None:
 
     errors = False
     # Quantity,Name,Finish,Edition Code,Collector Number,Mana cost,Types,Sub-types,Super-types,Rarity
-    with open(args.filename) as csvfile:
+    with open(args.filename, encoding="utf-8") as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
             try:
