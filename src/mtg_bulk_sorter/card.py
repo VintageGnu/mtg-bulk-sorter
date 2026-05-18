@@ -66,5 +66,14 @@ class Card:
     def mana_value(self):
         return self.mana_cost.mana_value
 
-    def multicoloured(self):
-        return self.mana_cost.multicoloured
+    @property
+    def is_colourless(self) -> bool:
+        return self.mana_cost.is_colourless
+
+    @property
+    def is_monocoloured(self) -> bool:
+        return self.mana_cost.is_monocoloured
+
+    @property
+    def is_multicoloured(self) -> bool:
+        return self.mana_cost.is_multicoloured

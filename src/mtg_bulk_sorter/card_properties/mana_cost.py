@@ -19,10 +19,10 @@ class ManaSymbol(StrEnum):
 
 class ManaCost:
     def __init__(self, raw_cost: str = ""):
-        self.raw = raw_cost
-        self.extracted_colours = []
-        self.colourless = 0
-        self.colours = ManaColour.NONE
+        self.raw: str = raw_cost
+        self.extracted_colours: list[ManaSymbol] = []
+        self.colourless: int = 0
+        self.colours: ManaColour = ManaColour.NONE
 
         if '//' in self.raw:
             merged_cost = ''.join(self.raw.split('//'))
@@ -96,5 +96,13 @@ class ManaCost:
         return len(self.extracted_colours) + self.colourless
 
     @property
-    def multicoloured(self) -> bool:
-        return len(self.colours) > 1
+    def is_colourless(self) -> bool:
+        return self.colours.is_colourless
+
+    @property
+    def is_monocoloured(self) -> bool:
+        return self.colours.is_monocoloured
+
+    @property
+    def is_multicoloured(self) -> bool:
+        return self.colours.is_multicoloured

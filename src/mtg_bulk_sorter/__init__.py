@@ -47,7 +47,7 @@ def main() -> None:
 
     if not errors:
         for card in cards:
-            s = f"{"* " if card.multicoloured() else ""}"
+            s = f"{"* " if card.is_multicoloured else ""}"
             s += f"{card.name} {card.mana_cost.raw}: "
             if card.mana_cost.colours == ManaColour.NONE:
                 s += "NONE"
